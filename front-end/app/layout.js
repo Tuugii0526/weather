@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-cyan-50 to-white `}
       >
-        <div className="min-w-[240px] max-w-[1200px] m-auto ">
+        <div className="min-w-[240px] max-w-[1200px] m-auto p-5">
         {children}
         </div>
       </body>
