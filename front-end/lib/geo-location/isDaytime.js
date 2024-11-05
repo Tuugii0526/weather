@@ -1,5 +1,6 @@
-export const isDaytime=(offset,sunrise,sunset)=>{
-if(sunrise<(Date.now()+offset)<sunset)
+export const isDaytime=(sunrise,sunset)=>{
+    const now =new Date()
+if(sunrise<now.getTime() && now.getTime()<sunset)
 {
     return true
 }
